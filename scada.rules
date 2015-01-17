@@ -1,0 +1,3 @@
+ alert tcp $EXTERNAL_NET ANY -> $HOME_NET 502 (msg:"snort rule test 1";  content:"|09|"; offset:9; sid:14265; rev:3;)
+ alert tcp $EXTERNAL_NET ANY -> $HOME_NET 502 (msg:"snort rule test 2"; sid:42299; content:"|10 05|"; offset:10; rev:5;)
+ alert tcp $EXTERNAL_NET ANY -> $HOME_NET 502 (msg:"snort rule test 3"; sid:15076; content:"|07|"; offset:7; rev:5;)
